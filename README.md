@@ -77,7 +77,7 @@ POST = "Here is something"
 2. [02 — POST: Webhook.site](./02-post/README.md)
 3. [03 — POST: Shared Scoreboard](./03-post-game-data/README.md)
 4. [04 — GET: Shared Scoreboard](./04-get-game-data/README.md)
-5. [05 — Final Exercise: Online Scoreboard Client](./05-scoreboard-client/README.md)
+5. [05 — Assignment: Online Scoreboard Client](./05-assignment-scoreboard-client/README.md)
 
 ## Reference material
 
