@@ -163,7 +163,7 @@ The program should continue showing the menu until the user chooses:
 ---
 
 # Minimum requirements checklist
-
+Complete ALL for G:
 - [ ] Menu works
 - [ ] User can enter a name
 - [ ] User can enter a score
@@ -178,7 +178,7 @@ The program should continue showing the menu until the user chooses:
 
 # Bonus challenges
 
-Choose one or more:
+Complete at all minimum requirements & at least 2 bonus challenges for VG:
 
 ### Top 10
 
