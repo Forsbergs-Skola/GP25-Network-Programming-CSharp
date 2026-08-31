@@ -1,4 +1,4 @@
-# 05 — Final Exercise: Online Scoreboard Client
+# 05 — Assignment: Online Scoreboard Client
 
 ## Goal
 
