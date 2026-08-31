@@ -178,7 +178,7 @@ Complete ALL for G:
 
 # Bonus challenges
 
-Complete at all minimum requirements & at least 2 bonus challenges for VG:
+Complete all minimum requirements & at least 2 bonus challenges for VG:
 
 ### Top 10
 
