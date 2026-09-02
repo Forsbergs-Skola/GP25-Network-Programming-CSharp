@@ -231,11 +231,11 @@ Instead of the given API endpoints, create your own database.
 
 ```text
 scores
- ├── player1
+ ├── Oabc123xyz
  │     ├── name: "Alice"
  │     └── score: 9000
  │
- └── player2
+ └── 1abc123xyz
        ├── name: "Bob"
        └── score: 5000
 ```
