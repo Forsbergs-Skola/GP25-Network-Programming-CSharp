@@ -14,7 +14,5 @@ catch (HttpRequestException e){
 	Console.WriteLine(e.Message);
 }
 
-public class CatFact{
-	public string Fact{ get; set; } = "";
-	public int Length { get; set; }
-}
+
+
