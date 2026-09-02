@@ -1,15 +1,20 @@
-﻿string catFactUrl = "https://catfact.ninja/fact";
+﻿using System.Net.Http.Json;
+
+string catFactUrl = "https://catfact.ninja/fact";
 
 HttpClient client = new HttpClient();
 
-// GET Request
+// GET Request with JSON to Class Conversion
 try{
-	string response = await client.GetStringAsync(catFactUrl);
-	Console.WriteLine(response);
+	CatFact? catFact = await client.GetFromJsonAsync<CatFact>(catFactUrl);
+	
+	Console.WriteLine(catFact?.Fact);
 }
 catch (HttpRequestException e){
 	Console.WriteLine(e.Message);
 }
 
-
-
+public class CatFact{
+	public string Fact{ get; set; } = "";
+	public int Length { get; set; }
+}
