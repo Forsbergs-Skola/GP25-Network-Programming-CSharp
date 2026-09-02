@@ -180,15 +180,15 @@ Complete ALL for G:
 
 Complete all minimum requirements & at least 2 bonus challenges for VG:
 
-### Top 10
+### #1 Top 10
 
 Display only the ten highest scores.
 
-### Personal best
+### #2 Personal best
 
 Ask for a player name and display their highest submitted score.
 
-### Better validation
+### #3 Better validation
 
 Reject:
 
@@ -196,7 +196,7 @@ Reject:
 - invalid numeric input
 - negative scores
 
-### Separate the networking code
+### #4 Separate the networking code
 
 Create a class such as:
 
@@ -215,7 +215,7 @@ await api.SubmitScore(...);
 await api.GetScoreboard();
 ```
 
-### Loading state
+### #5 Loading state
 
 Display:
 
@@ -224,6 +224,39 @@ Loading scoreboard...
 ```
 
 while waiting for the request.
+
+### #6 Firebase Realtime Database
+
+Instead of the given API endpoints, create your own database.
+
+```text
+scores
+ ├── player1
+ │     ├── name: "Alice"
+ │     └── score: 9000
+ │
+ └── player2
+       ├── name: "Bob"
+       └── score: 5000
+```
+
+### Hints:
+Check endpoint format:
+```csharp
+string url = "https://YOUR_DATABASE_URL/scores.json"
+```
+
+Check Firebase Rules:
+
+```json
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+To be used ONLY while testing as it greatly compromises the security of your database.
 
 ---
 
