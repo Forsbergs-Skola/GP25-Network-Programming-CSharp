@@ -2,7 +2,7 @@
 using SampleClient;
 
 string catFactUrl = "https://catfact.ninja/fact";
-string webhookUrl = "https://webhook.site/984ddf2f-3b80-4576-94e5-22095f5c9f0b";
+string webhookUrl = "https://hooks.zapier.com/hooks/catch/8338993/ujs9jj9/";
 HttpClient client = new HttpClient();
 
 
@@ -23,9 +23,7 @@ async Task GetCatFact(){
 // Format the payload in JSON
 var data = new{
 	name = "Ben",
-	lunch = "rice",
-	priceOfLunch = 32.5,
-	isFull = true
+	score = 00
 };
 
 try {
@@ -44,5 +42,26 @@ catch (HttpRequestException e){
 	Console.WriteLine(e.Message);
 }
 
+try{
+	List<ScoreEntry>? scores =
+		await client.GetFromJsonAsync<List<ScoreEntry>>(
+			"https://script.google.com/macros/s/AKfycbys5aEPMvNCutyhNYYCcQcCjzsi2UtqNspmKyCH-AicJxJbCJMrAoT0LUaYaXhTWA8n/exec"
+		);
+
+	foreach (ScoreEntry score in scores!)
+	{
+		Console.WriteLine(
+			$"{score.Name}: {score.Score}"
+		);
+	}
+}
+catch (HttpRequestException e){
+	Console.WriteLine(e.Message);
+}
+
+public class ScoreEntry{
+	public string Name{ get; set; } = "";
+	public int Score {get; set;}
+}
 
 
